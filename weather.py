@@ -18,5 +18,5 @@ def fetch_weather(location):# 用requests库，与API交互并获取信息
     low = daily['low']
     wind_direction = daily['wind_direction']
     wind_scale = daily['wind_scale']
-    weather_str = u'{},{}白天{}，夜晚{}。最高气温{}度,最低气温{}度。{}风{}级。'.format(date, location, text_day, text_night, high, low, wind_direction, wind_scale)
+    weather_str = u'{}  {}白天{}，夜晚{}。最高气温{}度，最低气温{}度。{}风{}级。'.format(date, location, text_day, text_night, high, low, wind_direction, wind_scale)
     return weather_str
